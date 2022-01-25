@@ -1,8 +1,8 @@
 ### Make docker image
-docker build -t pyapptest .
+`docker build -t pyapptest .`
 
 ### Instantiate above image to a container
-docker run --name pyapptestcn -dp 5001:5001 -v "/private/nfs:/data/" pyapptest
+`docker run --name pyapptestcn -dp 5001:5001 -v "/private/nfs:/data/" pyapptest`
 
 Now hit `http://localhost:5001` from host to run the webapp inside the container
 
