@@ -34,7 +34,7 @@ Example NFS Server IP: 192.168.1.8
 showmount -e 192.168.1.8
 
 # Create local dir
-sudo /private/nfs
+sudo mkdir -p /private/nfs
 
 # Mount the NFS volume to local path
 sudo mount -t nfs -o nolocks,resvport,locallocks 192.168.1.8:/mnt/nfs_share /private/nfs
